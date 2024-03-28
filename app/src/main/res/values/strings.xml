@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EasyScour</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Devansh Bhadauria </string>
+    <string name="nav_header_subtitle">devanshbhadauria4070@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_searchFlight">Search Flight</string>
+    <string name="menu_myBooking">My Booking </string>
+    <string name="menu_myProfile">My Profile </string>
+
+    <string name="hint_from_state">From State</string>
+    <string name="hint_destination_state">Destination State</string>
+    <string name="hint_date">Date (MM/DD/YYYY)</string>
+    <string name="hint_passengers">Number of Passengers</string>
+    <string name="search_button_text">Search</string>
+
+    <string name="from_state_label">From State: %1$s</string>
+    <string name="destination_state_label">Destination State: %1$s</string>
+    <string name="date_label">Date: %1$s</string>
+    <string name="passengers_label">Passengers: %1$s</string>
+
+
+</resources>

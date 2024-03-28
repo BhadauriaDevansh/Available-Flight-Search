@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fromStateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_from_state"
+        android:inputType="text"
+        android:autofillHints="fromState" />
+
+    <EditText
+        android:id="@+id/destinationStateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromStateEditText"
+        android:hint="@string/hint_destination_state"
+        android:inputType="text"
+        android:autofillHints="destinationState" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationStateEditText"
+        android:hint="@string/hint_date"
+        android:inputType="date"
+        android:autofillHints="date" />
+
+    <EditText
+        android:id="@+id/passengersEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditText"
+        android:hint="@string/hint_passengers"
+        android:inputType="number"
+        android:autofillHints="number" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passengersEditText"
+        android:text="Search"
+        android:onClick="onSearchButtonClick" />
+
+</RelativeLayout>

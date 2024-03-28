@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.easyscour.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_searchFlight"
+        android:name="com.example.easyscour.ui.searchFlight.SearchFlightFragment"
+        android:label="@string/menu_searchFlight"
+        tools:layout="@layout/fragment_searchflight" />
+
+    <fragment
+        android:id="@+id/nav_myBooking"
+        android:name="com.example.easyscour.ui.myBooking.MyBookingFragment"
+        android:label="@string/menu_myBooking"
+        tools:layout="@layout/fragment_mybooking" />
+    <fragment
+        android:id="@+id/nav_myProfile"
+        android:name="com.example.easyscour.ui.myProfile.MyProfileFragment"
+        android:label="@string/menu_myProfile"
+        tools:layout="@layout/fragment_myprofile" />
+
+    <fragment
+        android:id="@+id/nav_flightDetails"
+        android:name="com.example.easyscour.ui.flightDetails.FlightDetailsFragment"
+        android:label="Flight Details"
+        tools:layout="@layout/fragment_flight_details" />
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_searchFlight"
+        app:destination="@+id/nav_searchFlight" />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_myBooking"
+        app:destination="@+id/nav_myBooking" />
+
+    <action
+        android:id="@+id/action_nav_home_to_nav_myProfile"
+        app:destination="@+id/nav_myProfile" />
+
+    <action
+        android:id="@+id/action_nav_searchFlight_to_nav_flightDetails"
+        app:destination="@id/nav_flightDetails">
+        <argument
+            android:name="fromState"
+            app:argType="string" />
+        <argument
+            android:name="destinationState"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="passengers"
+            app:argType="integer" />
+    </action>
+
+
+
+
+</navigation>
